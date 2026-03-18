@@ -1,14 +1,22 @@
+:root{
+  --font-default: 'Datatype', monospace;
+  --font-principal-title: 'Archivo Black', sans-serif;
+  --font-secondary-title-weight: 400;
+}
+
 body {
   color: #333333;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: var(--font-default);
 }
 
 h1 {
   background-image: url(../img/download.png);
+  font-family: var(--font-principal-title);
 }
 
 h2 {
   border-bottom: 2px groove #333333;
+  font-weight: var(--font-secondary-title-weight);
 }
 
 img {
