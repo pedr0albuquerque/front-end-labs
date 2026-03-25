@@ -69,14 +69,6 @@ p{
     width: 90%;
 }
 
-p::first-letter {
-    font-weight: bold;
-}
-
 h1 + p {
    text-indent: 0; 
-}
-
-p::first-line {
-    font-variant: small-caps;
 }
