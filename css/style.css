@@ -6,3 +6,25 @@ h1 {
   color: blueviolet;
   font-style: italic;
 }
+
+.font-titulos {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.titulo-principal {
+  font-style: italic;
+}
+
+.titulo-secundario {
+  text-align: right;
+}
+
+.primeiro-titulo-secundario {
+  color: rgb(26, 5, 46);
+  font-style: italic;
+}
+
+.segundo-titulo-secundario {
+  color: rgb(26, 5, 46);
+  font-style: italic;
+}
