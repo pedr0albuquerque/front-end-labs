@@ -1,0 +1,82 @@
+/* ============================================
+   DESIGN SYSTEM - TOKENS E VARIÁVEIS GLOBAIS
+   ============================================ */
+
+:root {
+  /* ---- PALETA DE CORES ---- */
+  --color-primary: #333;
+  --color-secondary: #777;
+  --color-accent: #2a5cdb;
+  --color-success: #27ae60;
+  --color-warning: #f39c12;
+  --color-error: #e74c3c;
+  
+  --color-bg-light: #f2eded;
+  --color-bg-muted: #f5f5f5;
+  --color-border: #ccc;
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #404040;
+  --color-text-light: #666;
+  
+  /* ---- TIPOGRAFIA ---- */
+  --font-family-primary: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-family-mono: "Courier New", monospace;
+  
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.8;
+  
+  /* ---- ESPAÇAMENTO ---- */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  
+  /* ---- BORDER & RADIUS ---- */
+  --border-width: 1px;
+  --border-width-thick: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* ---- SOMBRAS ---- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+  
+  /* ---- COMPONENTES ESPECÍFICOS ---- */
+  --logo-width: 94px;
+  --logo-height: auto;
+  
+  --container-max-width: 1200px;
+  --container-padding-mobile: var(--space-md);
+  --container-padding-tablet: var(--space-lg);
+  --container-padding-desktop: var(--space-xl);
+  
+  /* ---- TRANSIÇÕES ---- */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+  
+  /* ---- Z-INDEX ---- */
+  --z-dropdown: 100;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+}

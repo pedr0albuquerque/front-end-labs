@@ -1,74 +1,126 @@
-:root{
-    --cor-base: #333;
-    --cor-fundo-img: #f2eded;
-    --cor-borda-img: #ccc;
-    --cor-titulo-especial: #898f95;
-    --cor-rodape: #777;
-}
-body{
-    color: var(--cor-base);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;      
+/* ============================================
+   ESTILOS ESPECÍFICOS - PÁGINA ABOUT
+   ============================================ */
+
+/* Mantendo a compatibilidade com o Design System */
+
+/* ---- HEADER HERO DA PÁGINA ---- */
+h1 {
+  background-image: url(../img/sobre-background.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
 }
 
-h1{
-    background-image: url(../img/sobre-background.jpg);
-    padding: 10px;
+/* ---- HEADINGS COM BORDO ---- */
+h2 {
+  border-bottom: var(--border-width-thick) groove var(--color-base);
+  padding-bottom: var(--space-md);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
-h2{
-    border-bottom: 2px groove var(--cor-base); 
-    margin-top: 30px;   
+/* ---- FIGURA FLUIDA ---- */
+figure {
+  background-color: var(--color-bg-light);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin: var(--space-lg) auto;
+  overflow: hidden;
 }
 
-figure{
-    background-color: var(--cor-fundo-img);
-    border: 1px solid var(--cor-borda-img);
-    text-align: center;
-    padding: 15px;
-    margin: 30px;
+#centro-distribuicao {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-figcaption{
-    font-style: italic;
-    margin-top: 10px;
+/* ---- FIGCAPTION ---- */
+figcaption {
+  font-style: italic;
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+  margin-top: var(--space-md);
+  font-weight: 500;
 }
 
-p{
-    padding: 0 45px;
-    text-indent: 25px;
-    text-align: justify;
+/* ---- PARÁGRAFOS JUSTIFICADOS ---- */
+p {
+  padding: 0;
+  text-indent: 25px;
+  text-align: justify;
+  line-height: var(--line-height-loose);
+  margin-bottom: var(--space-md);
 }
 
-#centro-distribuicao{
-    margin-left: auto;
-    margin-right: auto;
-    width: 550px;
-}
-
-#rodape {
-    color: var(--cor-rodape);
-    margin: 30px 0;
-    padding: 30px 0;
-}
-
-#rodape img {
-    margin-right: 30px;
-    vertical-align: middle;
-    width: 94px;
-}
-
-#familia-pelho{
-    margin: 0 0 10px 10px;
-    float: right;
-}
-
-.container {
-    margin: 0 auto;
-    width: 90%;
-}
-
+/* Primeiro parágrafo sem indentação */
 h1 + p {
-   text-indent: 0; 
+  text-indent: 0;
+}
+
+/* ---- IMAGEM FLUTUANTE (RESPONSIVA) ---- */
+#familia-pelho {
+  margin: 0 var(--space-lg) var(--space-lg) 0;
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  #familia-pelho {
+    float: none;
+    max-width: 100%;
+    margin: var(--space-lg) 0;
+  }
+
+  figure {
+    margin: var(--space-lg) 0;
+  }
+
+  h1 {
+    padding: var(--space-lg);
+    font-size: var(--font-size-2xl);
+  }
+}
+
+/* ---- LISTA DE DIFERENCIAIS ---- */
+mark {
+  background-color: transparent;
+}
+
+mark ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+mark li {
+  padding: var(--space-md);
+  background-color: var(--color-bg-light);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+mark li::before {
+  content: "✓ ";
+  color: var(--color-success);
+  font-weight: var(--font-weight-bold);
+  margin-right: 8px;
+}
+
+mark a {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+
+mark a:hover {
+  text-decoration: underline;
 }

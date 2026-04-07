@@ -1,0 +1,267 @@
+/* ============================================
+   UTILITÁRIOS - CLASSES AUXILIARES
+   ============================================ */
+
+/* ---- VISIBILIDADE ---- */
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ---- TIPOGRAFIA ---- */
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-muted {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.text-primary {
+  color: var(--color-accent);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-error {
+  color: var(--color-error);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---- CORES DE FUNDO ---- */
+.bg-light {
+  background-color: var(--color-bg-light);
+}
+
+.bg-muted {
+  background-color: var(--color-bg-muted);
+}
+
+.bg-primary {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.bg-success {
+  background-color: var(--color-success);
+  color: #fff;
+}
+
+/* ---- BORDAS ---- */
+.border {
+  border: var(--border-width) solid var(--color-border);
+}
+
+.border-top {
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.border-bottom {
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.border-left {
+  border-left: var(--border-width) solid var(--color-border);
+}
+
+.border-right {
+  border-right: var(--border-width) solid var(--color-border);
+}
+
+.rounded {
+  border-radius: var(--radius-md);
+}
+
+.rounded-sm {
+  border-radius: var(--radius-sm);
+}
+
+.rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* ---- SOMBRAS ---- */
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ---- OPACITY ---- */
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+/* ---- DISPLAY ---- */
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+/* ---- RESPONSIVIDADE MOBILE-FIRST ---- */
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .show-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .show-tablet {
+    display: none !important;
+  }
+}
+
+/* ---- OVERFLOW ---- */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+/* ---- POSICIONAMENTO ---- */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+/* ---- CURSOR ---- */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ---- HOVER & INTERACTIVE ---- */
+.transition-all {
+  transition: all var(--transition-normal);
+}
+
+.hover\:opacity-80:hover {
+  opacity: 0.8;
+}

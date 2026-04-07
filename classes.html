@@ -1,17 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/utils.css">
+  
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+  
+  <title>Aulas - Mirror Fashion</title>
 </head>
-<body>
-  <h1 class="font-titulos titulo-principal">HOME</h1>
-  <h2 class="primeiro-titulo-secundario titulo-secundario">TITULO SECUNDARIO</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ex.</p>
 
-  <h2 class="segundo-titulo-secundario titulo-secundario">TITULO SECUNDARIO</h2>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ex.</p>
+<body>
+  <!-- HEADER / NAVEGAÇÃO -->
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <img src="img/logo.png" alt="Logomarca Mirror Fashion" class="header__logo">
+        <nav class="header__nav">
+          <li><a href="index.html" class="header__nav-link">Home</a></li>
+          <li><a href="about.html" class="header__nav-link">Sobre</a></li>
+          <li><a href="classes.html" class="header__nav-link header__nav-link--active">Aulas</a></li>
+        </nav>
+        <button class="header__toggle" aria-label="Menu">
+          <span class="header__toggle-bar"></span>
+          <span class="header__toggle-bar"></span>
+          <span class="header__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- SEÇÃO INTRO -->
+    <section class="section">
+      <div class="container container--md">
+        <h1 class="text-center">Aulas e Treinamentos</h1>
+        <p class="text-center text-lg">Aprenda sobre moda, estilo e tendências com nossos cursos especializados.</p>
+      </div>
+    </section>
+
+    <!-- SEÇÃO AULAS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center mb-lg">Nossas Aulas</h2>
+
+        <div class="grid grid--3-cols">
+          <!-- Aula 1 -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Fundamentos de CSS</h3>
+            </div>
+            <div class="card__body">
+              <p>Aprenda os fundamentos de CSS para criar designs modernos e responsivos.</p>
+              <p class="text-sm text-muted">Nível: Iniciante</p>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn btn--primary btn--block">Inscrever</a>
+            </div>
+          </div>
+
+          <!-- Aula 2 -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Design Responsivo</h3>
+            </div>
+            <div class="card__body">
+              <p>Domine técnicas de design responsivo para todos os dispositivos.</p>
+              <p class="text-sm text-muted">Nível: Intermediário</p>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn btn--primary btn--block">Inscrever</a>
+            </div>
+          </div>
+
+          <!-- Aula 3 -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Design System</h3>
+            </div>
+            <div class="card__body">
+              <p>Crie e mantenha um design system profissional para sua organização.</p>
+              <p class="text-sm text-muted">Nível: Avançado</p>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn btn--primary btn--block">Inscrever</a>
+            </div>
+          </div>
+
+          <!-- Aula 4 -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">JavaScript Essencial</h3>
+            </div>
+            <div class="card__body">
+              <p>Fundamentos de JavaScript para desenvolvimento web interativo.</p>
+              <p class="text-sm text-muted">Nível: Iniciante</p>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn btn--primary btn--block">Inscrever</a>
+            </div>
+          </div>
+
+          <!-- Aula 5 -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Acessibilidade Web</h3>
+            </div>
+            <div class="card__body">
+              <p>Crrie sites acessíveis para todos os usuários com as melhores práticas.</p>
+              <p class="text-sm text-muted">Nível: Intermediário</p>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn btn--primary btn--block">Inscrever</a>
+            </div>
+          </div>
+
+          <!-- Aula 6 -->
+          <div class="card">
+            <div class="card__header">
+              <h3 class="card__title">Performance Web</h3>
+            </div>
+            <div class="card__body">
+              <p>Otimize seus sites para velocidade e performance superior.</p>
+              <p class="text-sm text-muted">Nível: Avançado</p>
+            </div>
+            <div class="card__footer">
+              <a href="#" class="btn btn--primary btn--block">Inscrever</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO CTA -->
+    <section class="section bg-muted">
+      <div class="container container--md text-center">
+        <h2>Comece a Aprender Hoje!</h2>
+        <p>Saia à frente com nossos cursos comprovados e instrutores experientes.</p>
+        <div class="flex flex--center flex--gap-md">
+          <a href="#" class="btn btn--primary">Ver Todos os Cursos</a>
+          <a href="about.html" class="btn btn--secondary">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <img src="img/logo.png" alt="Logomarca Mirror Fashion" class="footer__logo">
+        <p class="footer__text">&copy; 2024 Mirror Fashion. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menu responsivo
+    document.querySelector('.header__toggle').addEventListener('click', function() {
+      document.querySelector('.header__nav').classList.toggle('header__nav--open');
+    });
+  </script>
 </body>
+
 </html>

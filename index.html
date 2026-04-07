@@ -1,14 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo HTML</title>
-    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Design System CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tokens.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/utils.css">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    
+    <title>Home - Mirror Fashion</title>
 </head>
+
 <body>
-    <h1>Bem-vindo à nossa loja!</h1>
-    <p>Explore nossos produtos e aproveite as ofertas exclusivas.</p>
-    <a href="./about-html.html">Saiba mais sobre o HTML</a>
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <img src="img/logo.png" alt="Logomarca Mirror Fashion" class="header__logo">
+                <nav class="header__nav">
+                    <li><a href="index.html" class="header__nav-link header__nav-link--active">Home</a></li>
+                    <li><a href="about.html" class="header__nav-link">Sobre</a></li>
+                    <li><a href="classes.html" class="header__nav-link">Aulas</a></li>
+                </nav>
+                <button class="header__toggle" aria-label="Menu">
+                    <span class="header__toggle-bar"></span>
+                    <span class="header__toggle-bar"></span>
+                    <span class="header__toggle-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- SEÇÃO HERO -->
+        <section class="section section--lg bg-primary">
+            <div class="container text-center">
+                <h1 class="text-uppercase">Bem-vindo à Mirror Fashion!</h1>
+                <p class="text-lg">Explore nossos produtos e aproveite as ofertas exclusivas.</p>
+                <a href="about.html" class="btn btn--secondary btn--lg">Saiba Mais</a>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DESTAQUES -->
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center mb-lg">Nossas Coleções Destaque</h2>
+                
+                <div class="grid grid--3-cols">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Moda Casual</h3>
+                            <p>Roupas confortáveis e estilosas para o dia a dia.</p>
+                            <a href="#" class="btn btn--primary">Explorar</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Moda Formal</h3>
+                            <p>Peças elegantes para ocasiões especiais.</p>
+                            <a href="#" class="btn btn--primary">Explorar</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Acessórios</h3>
+                            <p>Complementos perfeitos para transformar seu look.</p>
+                            <a href="#" class="btn btn--primary">Explorar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CTA -->
+        <section class="section bg-muted">
+            <div class="container container--md text-center">
+                <h2>Comece suas Compras Agora!</h2>
+                <p>Acesse nosso catálogo completo com milhares de produtos e promoções incríveis.</p>
+                <a href="about.html" class="btn btn--primary btn--lg">Ir para a Loja</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <img src="img/logo.png" alt="Logomarca Mirror Fashion" class="footer__logo">
+                <p class="footer__text">&copy; 2024 Mirror Fashion. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu responsivo
+        document.querySelector('.header__toggle').addEventListener('click', function() {
+            document.querySelector('.header__nav').classList.toggle('header__nav--open');
+        });
+    </script>
 </body>
+
 </html>
