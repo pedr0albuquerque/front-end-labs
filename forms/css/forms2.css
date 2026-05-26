@@ -84,7 +84,7 @@ input[type="reset"]{
     gap: 10px;
     text-align: center;
    
-    background: transparent;
+    background: linear-gradient(135deg, #d9f829, #bbd815);
   }
 }
 
@@ -105,7 +105,7 @@ input[type="reset"]{
     text-align: center;
     font-size: 12px;
    
-    background: transparent;
+    background: linear-gradient(135deg, #d9f829, #bbd815);
   }
   
 }
